@@ -11,7 +11,12 @@ import (
 // 	dogSpecialist
 // 	snakeSpecialist
 // )
- 
+// type Doctor struct{
+// 	id int
+// 	actorName string
+// 	epissodes []string
+// 	companions []string
+// }
 func main(){
 	//i := false
 	// i  := 1==2 
@@ -52,8 +57,32 @@ func main(){
 	// var matrix [][]int = [][]int{[]int{1,2,3},[]int{3,2,1},[]int{2,1,3}  }
 	// fmt.Println(matrix[0])
 
-	a := []int{1, 2,3,4,5}
-	b := append(a[1:], 6)
+	// a := []int{1, 2,3,4,5}
+	// b := append(a[1:], 6)
 
-	fmt.Println(b)
+	// fmt.Println(b)
+	// statePopulation := make(map[string]int)
+	// statePopulation = map[string]int{
+	// 	"egypt" : 15000, 
+	// 	"KSA" : 20000,
+	// 	"UAE" : 17000,
+	// } 
+	// statePopulation["cairo"] = 10000
+	// delete(statePopulation, "cairo")
+	// fmt.Println(statePopulation)
+
+	aDoctor := Doctor{
+		 id : 2,
+		 actorName:  "abdallah elassal",
+		 companions: []string{
+			"alaa ahmed",
+			"ahmed",
+		},
+		epissodes: []string{
+			"islam",
+		},
+	}
+	fmt.Println(aDoctor)
+
+
 }
